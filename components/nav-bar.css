@@ -1,0 +1,9 @@
+.active .hamburger-top {
+  transform: translateY(8px) rotate(45deg);
+}
+.active .hamburger-middle {
+  scale: 0;
+}
+.active .hamburger-bottom {
+  transform: translateY(-8px) rotate(-45deg);
+}

@@ -7,3 +7,11 @@
     text-wrap: balance;
   }
 }
+.url-form {
+  background-image: url("../public/images/bg-shorten-mobile.svg");
+}
+@media screen and (min-width: 768px) {
+  .url-form {
+    background-image: url("../public/images/bg-shorten-desktop.svg");
+  }
+}

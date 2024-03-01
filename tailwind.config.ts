@@ -25,6 +25,16 @@ const config: Config = {
       gridTemplateRows: {
         "parent-layout": "auto 1fr",
       },
+      container: {
+        padding: {
+          DEFAULT: "1rem",
+          sm: "2rem",
+          lg: "4rem",
+          xl: "8rem",
+          "2xl": "6rem",
+        },
+        center: true,
+      },
     },
   },
   plugins: [],

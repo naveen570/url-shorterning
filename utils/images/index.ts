@@ -1,2 +1,3 @@
 import logo from "@/public/images/logo.svg";
-export const source = { logo };
+import illustrationWorking from "@/public/images/illustration-working.svg";
+export const source = { logo, illustrationWorking };

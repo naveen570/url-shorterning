@@ -1,3 +1,10 @@
+import { Hero } from "@/components";
+
 export default async function Home() {
-  return <main className="overflow-auto"></main>;
+  await fetch("/api/url", { method: "POST" });
+  return (
+    <div>
+      <Hero />
+    </div>
+  );
 }

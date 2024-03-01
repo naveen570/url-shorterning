@@ -1,4 +1,5 @@
 import { z } from "zod";
-import { ZUrlSchema } from "../schema";
+import { ZUrlResponseSchema, ZUrlFormSchema } from "../schema";
 
-export type UrlResponse = z.infer<typeof ZUrlSchema>;
+export type UrlResponse = z.infer<typeof ZUrlResponseSchema>;
+export type UrlForm = z.infer<typeof ZUrlFormSchema>;

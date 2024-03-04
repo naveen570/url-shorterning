@@ -10,7 +10,7 @@ export const ResultPreview = () => {
   }, [list]);
   if (!visible) return null;
   return (
-    <section className={`container flex w-full flex-col gap-4 py-28 `}>
+    <section className={`container flex w-full flex-col gap-4 pt-28 `}>
       {list.map((x) => (
         <PreviewCard key={x.id} {...x} />
       ))}

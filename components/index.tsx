@@ -5,6 +5,8 @@ import { MobileNavBar } from "./mobile-nav-bar";
 import { NavBar } from "./nav-bar";
 import { CopyButton } from "./copy-button";
 import { PreviewCard } from "./preview-card";
+import { AdvancedStatistics } from "./advanced-statistics";
+import { StatisticsCard } from "./statistics-card";
 
 export {
   NavBar,
@@ -14,4 +16,6 @@ export {
   ResultPreview,
   CopyButton,
   PreviewCard,
+  AdvancedStatistics,
+  StatisticsCard,
 };

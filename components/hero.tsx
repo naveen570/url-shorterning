@@ -18,7 +18,7 @@ export const Hero = () => {
             </p>
           </div>
 
-          <button className="rounded-full bg-primary-cyan px-8 py-2.5 text-white transition-colors hover:bg-primary-cyan/50">
+          <button className="rounded-full bg-primary-cyan px-8 py-2.5 font-bold text-white transition-colors hover:bg-primary-cyan/50">
             Get Started
           </button>
         </div>

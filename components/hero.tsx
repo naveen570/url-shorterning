@@ -13,8 +13,8 @@ export const Hero = () => {
               More than just shorter links
             </h1>
             <p className="text-neutral-gray">
-              Build your brand's recognition and get detailed insights on how
-              your links are performing.
+              Build your brand&apos;s recognition and get detailed insights on
+              how your links are performing.
             </p>
           </div>
 

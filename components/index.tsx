@@ -7,7 +7,9 @@ import { CopyButton } from "./copy-button";
 import { PreviewCard } from "./preview-card";
 import { AdvancedStatistics } from "./advanced-statistics";
 import { StatisticsCard } from "./statistics-card";
-
+import { Boost } from "./boost";
+import { Footer } from "./footer";
+import { Social } from "./socials";
 export {
   NavBar,
   MobileNavBar,
@@ -18,4 +20,7 @@ export {
   PreviewCard,
   AdvancedStatistics,
   StatisticsCard,
+  Boost,
+  Footer,
+  Social,
 };

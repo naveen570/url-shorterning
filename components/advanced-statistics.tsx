@@ -23,7 +23,7 @@ export const AdvancedStatistics = () => {
     },
   ];
   return (
-    <section className="container flex flex-col gap-20 py-40">
+    <section className="container flex flex-col gap-20 py-20 lg:py-40">
       <div className="flex flex-col items-center gap-6">
         <h2 className="text-3xl font-bold text-neutral-very-dark-violet md:text-5xl">
           Advanced Statistics

@@ -1,4 +1,10 @@
-import { AdvancedStatistics, Hero, ResultPreview } from "@/components";
+import {
+  AdvancedStatistics,
+  Boost,
+  Footer,
+  Hero,
+  ResultPreview,
+} from "@/components";
 
 export default async function Home() {
   return (
@@ -6,6 +12,8 @@ export default async function Home() {
       <Hero />
       <ResultPreview />
       <AdvancedStatistics />
+      <Boost />
+      <Footer />
     </main>
   );
 }

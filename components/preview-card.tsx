@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const PreviewCard = ({ inputUrl, resultUrl }: Url) => {
   return (
-    <article className="flex flex-col items-center justify-center gap-4 rounded-lg bg-white p-4 shadow-xl md:flex-row lg:gap-6">
+    <article className="flex flex-col items-center justify-center gap-4 rounded-lg bg-white p-4 shadow-xl transition-transform hover:-translate-y-1 md:flex-row lg:gap-6">
       <div className="max-w-full md:max-w-[50%]">
         <p className="max-w-full overflow-hidden text-ellipsis whitespace-nowrap">
           {inputUrl}

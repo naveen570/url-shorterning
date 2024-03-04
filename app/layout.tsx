@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.className} grid h-screen grid-rows-parent-layout bg-neutral-gray leading-normal`}
+        className={`${poppins.className} ] h-screen bg-neutral-gray leading-normal`}
       >
         <NavBar />
         {children}

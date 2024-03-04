@@ -1,3 +1,3 @@
-import { ZUrlFormSchema, ZUrlResponseSchema } from "./url";
+import { ZUrl, ZUrlFormSchema, ZUrlResponseSchema } from "./url";
 
-export { ZUrlResponseSchema, ZUrlFormSchema };
+export { ZUrlResponseSchema, ZUrlFormSchema, ZUrl };

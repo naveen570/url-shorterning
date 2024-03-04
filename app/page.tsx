@@ -1,10 +1,10 @@
-import { Hero } from "@/components";
+import { Hero, ResultPreview } from "@/components";
 
 export default async function Home() {
-  await fetch("/api/url", { method: "POST" });
   return (
-    <div>
+    <main>
       <Hero />
-    </div>
+      <ResultPreview />
+    </main>
   );
 }

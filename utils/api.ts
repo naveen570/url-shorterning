@@ -7,22 +7,8 @@ export const getShoternUrl = async (url: string): Promise<UrlResponse> => {
   formData.append("url", url);
   const { data } = await axios.post<UrlResponse>(
     "https://cleanuri.com/api/v1/shorten",
-    formData,
-    {
-      headers: {
-        "Access-Control-Allow-Origin": "*",
-      },
-    }
+    formData
   );
-  // const response = await fetch("https://cleanuri.com/api/v1/shorten", {
-  //   method: "POST",
-  //   body: formData,
-  //   redirect: "follow",
-  // });
-  // if (!response.ok) {
-  //   throw new Error("Something went wrong");
-  // }
-  // const data = await response.json();
   const parsedData = ZUrlResponseSchema.parse(data);
   return parsedData;
 };

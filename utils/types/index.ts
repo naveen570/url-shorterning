@@ -1,2 +1,2 @@
-import type { UrlResponse } from "./url";
-export type { UrlResponse };
+import type { UrlResponse, Url } from "./url";
+export type { UrlResponse, Url };

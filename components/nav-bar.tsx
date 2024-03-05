@@ -2,16 +2,18 @@
 import { source } from "@/utils/images";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import React, { useState } from "react";
 import "./nav-bar.css";
 import { MobileNavBar } from "@/components";
 import { AnimatePresence } from "framer-motion";
+import { useSticky } from "@/utils/hooks/useSticky";
 export type NavLinks = {
   name: string;
   href: string;
 };
 export const NavBar = () => {
   const [open, setOpen] = useState(false);
+  const { isVisible } = useSticky();
   const links: NavLinks[] = [
     {
       name: "Features",
@@ -26,9 +28,12 @@ export const NavBar = () => {
       href: "/",
     },
   ];
+
   return (
-    <nav className="bg-white">
-      <div className="container relative z-50 mx-auto flex w-full items-center justify-between bg-white py-5 text-sm font-bold text-neutral-gray md:gap-10 md:py-10">
+    <nav
+      className={`sticky top-0 z-30 bg-white transition-shadow ${!isVisible ? "shadow-lg" : ""}`}
+    >
+      <div className="container relative z-50 mx-auto flex w-full items-center justify-between py-5 text-sm font-bold text-neutral-gray md:gap-10 md:py-10">
         <Image src={source.logo.src} alt="logo" width={100} height={40} />
         <div className="hidden items-center gap-8 md:flex">
           {links.map((link) => (

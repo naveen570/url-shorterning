@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.className} ] h-screen scroll-smooth bg-neutral-100 leading-normal`}
+        className={`${poppins.className} ] relative min-h-screen scroll-smooth bg-neutral-100 leading-normal`}
       >
         <NavBar />
         {children}

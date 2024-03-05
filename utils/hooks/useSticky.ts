@@ -1,7 +1,7 @@
 import React from "react";
 
 export function useSticky() {
-  const [isVisible, setIsVisible] = React.useState(false);
+  const [isVisible, setIsVisible] = React.useState(true);
   React.useEffect(() => {
     const div = document.createElement("div");
     div.setAttribute("data-scroll-listener", "");

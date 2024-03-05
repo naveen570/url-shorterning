@@ -31,9 +31,11 @@ export const NavBar = () => {
 
   return (
     <nav
-      className={`sticky top-0 z-30 bg-white transition-shadow ${!isVisible ? "shadow-lg" : ""}`}
+      className={`sticky top-0 z-30 bg-white transition-shadow duration-500 ${!isVisible ? "shadow-lg" : ""}`}
     >
-      <div className="container relative z-50 mx-auto flex w-full items-center justify-between py-5 text-sm font-bold text-neutral-gray md:gap-10 md:py-10">
+      <div
+        className={`container relative z-50 mx-auto flex w-full items-center justify-between text-sm font-bold text-neutral-gray transition-all duration-500 md:gap-10  ${!isVisible ? "py-2.5 md:py-5" : "py-5 md:py-10"}`}
+      >
         <Image src={source.logo.src} alt="logo" width={100} height={40} />
         <div className="hidden items-center gap-8 md:flex">
           {links.map((link) => (

@@ -1,5 +1,6 @@
 "use client";
 import { useUrlStore } from "@/store/url";
+import { getShoternUrl } from "@/utils/api";
 import { ZUrlFormSchema, ZUrlResponseSchema } from "@/utils/schema";
 import { UrlForm } from "@/utils/types/url";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -13,11 +14,12 @@ export const Form = () => {
   const { errors, isSubmitting } = formState;
   const onSubmit = async (data: UrlForm) => {
     try {
-      const response = await fetch("/api/url", {
-        method: "POST",
-        body: JSON.stringify(data),
-      });
-      const result = ZUrlResponseSchema.parse(await response.json());
+      const result = await getShoternUrl(data.url);
+      // const response = await fetch("/api/url", {
+      //   method: "POST",
+      //   body: JSON.stringify(data),
+      // });
+      // const result = ZUrlResponseSchema.parse(await response.json());
       addUrl({
         inputUrl: data.url,
         resultUrl: result.result_url,

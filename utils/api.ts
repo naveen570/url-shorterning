@@ -1,3 +1,4 @@
+"use server";
 import axios from "axios";
 import { ZUrlResponseSchema } from "./schema";
 import { UrlResponse } from "./types";
